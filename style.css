@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #888888 0%, #111111 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    color: #555;
+    font-weight: 500;
+}
+
+input {
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #333;
+}
+
+.results {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #eee;
+}
+
+.result-item {
+    margin-bottom: 1rem;
+}
+
+.result-item h3 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-item p {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.attendance-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+    padding: 2rem 1rem 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.attendance-label {
+    color: #374658;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+}
+
+#currentAttendance {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.attendance-good {
+    color: #2ecc71 !important;
+}
+
+.attendance-bad {
+    color: #e74c3c !important;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #eee;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+}
+
+.social-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+.developed-by-section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.developed-by-label {
+    font-size: 0.95rem;
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+
+.developer-name {
+    font-size: 1.15rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        gap: 0.8rem;
+    }
+
+    .social-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #currentAttendance {
+        font-size: 1.5rem;
+    }
+
+    .attendance-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .attendance-label {
+        font-size: 1rem;
+    }
+    .result-item h3 {
+        font-size: 1rem;
+    }
+    .result-item p {
+        font-size: 1rem;
+    }
+} 

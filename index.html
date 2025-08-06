@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Attendance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Attendance Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="totalLectures">Total Lectures Delivered:</label>
+                <input type="number" id="totalLectures" min="0" placeholder="e.g., 45 (total number of lectures so far)">
+            </div>
+            <div class="input-group">
+                <label for="attendedLectures">Lectures Attended:</label>
+                <input type="number" id="attendedLectures" min="0" placeholder="e.g., 40 (number of lectures you attended)">
+            </div>
+            <div class="input-group">
+                <label for="minPercentage">Minimum Required Percentage:</label>
+                <input type="number" id="minPercentage" min="0" max="100" value="75" placeholder="e.g., 75 (minimum attendance required)">
+            </div>
+            <button onclick="calculateAttendance()">Calculate</button>
+            
+            <div class="results" id="results">
+                <div class="attendance-card">
+                    <div class="attendance-label">Current Percentage</div>
+                    <div id="currentAttendance">-</div>
+                </div>
+                <div class="result-item">
+                    <h3>Classes You Can Miss:</h3>
+                    <p id="missableClasses">-</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/rhythmadl/" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="www.linkedin.com/in/rhythmadl" class="social-btn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rhythmadl56" class="social-btn"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
